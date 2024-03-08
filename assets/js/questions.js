@@ -40,4 +40,14 @@ const questions = [
     ],
     answer: "Document Object Model",
   },
+  {
+    question: "Which of the following is a client-side storage mechanism in web browsers that allows websites to store data persistently on a user's device?",
+    choices: [
+      "Local Storage",
+      "PHP Sessions",
+      "Cookies",
+      "Session Storage",
+    ],
+    answer: "Local Storage",
+  },
 ];
