@@ -18,6 +18,17 @@ const questions = [
       "Complete Style Sheets",
       "Cascading Style Sheets",
     ],
-    answer: "Cascading Style Sheets ",
+    answer: "Cascading Style Sheets",
   },
+  {
+    question: "What is an API?",
+    choices: [
+      "Application Programming Interface",
+      "Application Profile Interface",
+      "Application Portfolio Interface",
+      "Application Public Interface",
+    ],
+    answer: "Application Programming Interface",
+  },
+  
 ];
