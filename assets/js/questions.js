@@ -30,5 +30,14 @@ const questions = [
     ],
     answer: "Application Programming Interface",
   },
-  
+  {
+    question: "What Does DOM Stand For?",
+    choices: [
+      "Document Observe Model",
+      "Document Object Model",
+      "Document Option Model",
+      "Document Open Model",
+    ],
+    answer: "Document Object Model",
+  },
 ];
