@@ -1,5 +1,5 @@
 // Questions and answers
-const questions = [
+const question = [
     {
       question: "What Does HTML Stand For?",
       choices: [
