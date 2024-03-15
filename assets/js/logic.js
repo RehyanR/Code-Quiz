@@ -51,3 +51,8 @@ const question = [
       answer: "Local Storage",
     },
   ];
+
+  // Function to start the quiz
+function startQuiz() {
+  
+}
