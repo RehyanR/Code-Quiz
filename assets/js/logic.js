@@ -59,3 +59,7 @@ function startQuiz() {
   displayQuestion();
   startTimer();
 }
+
+function displayQuestion() {
+
+}
