@@ -84,3 +84,5 @@ function startTimer() {
     }
   }, 1000);
 }
+
+function handleAnswer(choice) {}
