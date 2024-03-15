@@ -64,4 +64,6 @@ function displayQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   document.getElementById("question-title").textContent =
     currentQuestion.question;
+  const choicesContainer = document.getElementById("choices");
+  choicesContainer.innerHTML = "";
 }
