@@ -105,3 +105,5 @@ function endQuiz() {
   endScreen.classList.remove("hide");
   document.getElementById("final-score").textContent = score;
 }
+
+document.getElementById("start").addEventListener("click", startQuiz);
