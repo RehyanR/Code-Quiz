@@ -91,4 +91,10 @@ function handleAnswer(choice) {
   } else {
     timeLeft -= 10; // minus 10 seconds for each wrong answer
   }
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    displayQuestion();
+  } else {
+    endQuiz();
+  }
 }
