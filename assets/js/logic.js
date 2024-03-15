@@ -54,5 +54,8 @@ const question = [
 
   // Function to start the quiz
 function startQuiz() {
-  
+  document.getElementById("start").style.display = "none";
+  document.getElementById("questions").classList.remove("hide");
+  displayQuestion();
+  startTimer();
 }
