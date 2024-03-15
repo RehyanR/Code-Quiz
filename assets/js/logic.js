@@ -74,4 +74,13 @@ function displayQuestion() {
   });
 }
 
-function startTimer() {}
+function startTimer() {
+  const timer = setInterval(() => {
+    timeLeft--;
+    document.getElementById("time").textContent = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      endQuiz();
+    }
+  }, 1000);
+}
