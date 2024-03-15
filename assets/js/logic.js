@@ -48,6 +48,10 @@ const question = [
   },
 ];
 
+let currentQuestionIndex = 0;
+let score = 0;
+let timeLeft = 60; // Initial time limit
+
 // Function to start the quiz
 function startQuiz() {
   document.getElementById("start").style.display = "none";
