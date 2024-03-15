@@ -98,3 +98,7 @@ function handleAnswer(choice) {
     endQuiz();
   }
 }
+
+function endQuiz() {
+  document.getElementById("questions").classList.add("hide");
+}
