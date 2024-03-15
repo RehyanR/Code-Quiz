@@ -85,4 +85,10 @@ function startTimer() {
   }, 1000);
 }
 
-function handleAnswer(choice) {}
+function handleAnswer(choice) {
+  if (choice === questions[currentQuestionIndex].answer) {
+    score++;
+  } else {
+    timeLeft -= 10; // minus 10 seconds for each wrong answer
+  }
+}
