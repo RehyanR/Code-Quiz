@@ -73,3 +73,5 @@ function displayQuestion() {
     choicesContainer.appendChild(button);
   });
 }
+
+function startTimer() {}
