@@ -66,4 +66,10 @@ function displayQuestion() {
     currentQuestion.question;
   const choicesContainer = document.getElementById("choices");
   choicesContainer.innerHTML = "";
+  currentQuestion.choices.forEach((choice) => {
+    const button = document.createElement("button");
+    button.textContent = choice;
+    button.addEventListener("click", () => handleAnswer(choice));
+    choicesContainer.appendChild(button);
+  });
 }
