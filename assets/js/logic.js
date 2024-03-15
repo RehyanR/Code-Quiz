@@ -101,4 +101,7 @@ function handleAnswer(choice) {
 
 function endQuiz() {
   document.getElementById("questions").classList.add("hide");
+  const endScreen = document.getElementById("end-screen");
+  endScreen.classList.remove("hide");
+  document.getElementById("final-score").textContent = score;
 }
