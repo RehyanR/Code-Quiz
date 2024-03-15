@@ -1,5 +1,5 @@
 // Questions and answers
-const question = [
+const questions = [
   {
     question: "What Does HTML Stand For?",
     choices: [
@@ -74,17 +74,6 @@ function displayQuestion() {
   });
 }
 
-function startTimer() {
-  const timer = setInterval(() => {
-    timeLeft--;
-    document.getElementById("time").textContent = timeLeft;
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      endQuiz();
-    }
-  }, 1000);
-}
-
 function handleAnswer(choice) {
   if (choice === questions[currentQuestionIndex].answer) {
     score++;
@@ -97,6 +86,17 @@ function handleAnswer(choice) {
   } else {
     endQuiz();
   }
+}
+
+function startTimer() {
+  const timer = setInterval(() => {
+    timeLeft--;
+    document.getElementById("time").textContent = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      endQuiz();
+    }
+  }, 1000);
 }
 
 function endQuiz() {
