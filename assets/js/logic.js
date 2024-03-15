@@ -61,5 +61,7 @@ function startQuiz() {
 }
 
 function displayQuestion() {
-
+  const currentQuestion = questions[currentQuestionIndex];
+  document.getElementById("question-title").textContent =
+    currentQuestion.question;
 }
