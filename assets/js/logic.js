@@ -105,6 +105,8 @@ function startTimer() {
   }, 1000);
 }
 
+import { getScore, saveScore } from "./scores.js";
+
 function endQuiz() {
   document.getElementById("questions").classList.add("hide");
   const endScreen = document.getElementById("end-screen");
