@@ -112,6 +112,8 @@ function endQuiz() {
   const endScreen = document.getElementById("end-screen");
   endScreen.classList.remove("hide");
   document.getElementById("final-score").textContent = score;
+  const initialsInput = document.getElementById("initials");
+  const submitButton = document.getElementById("submit");
 }
 
 document.getElementById("start").addEventListener("click", startQuiz);
