@@ -79,6 +79,8 @@ function handleAnswer(choice) {
   const feedbackContainer = document.getElementById("feedback");
   if (choice === questions[currentQuestionIndex].answer) {
     score++;
+    feedbackContainer.textContent = "Correct!";
+    feedbackContainer.classList.add("correct");
   } else {
     timeLeft -= 10; // minus 10 seconds for each wrong answer
   }
