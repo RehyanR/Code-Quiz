@@ -84,6 +84,8 @@ function handleAnswer(choice) {
   } else {
     timeLeft -= 10; // minus 10 seconds for each wrong answer
   }
+  feedbackContainer.textContent = "Incorrect!";
+  feedbackContainer.classList.add("incorrect");
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     displayQuestion();
