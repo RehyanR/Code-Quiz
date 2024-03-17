@@ -75,6 +75,8 @@ function displayQuestion() {
 }
 
 function handleAnswer(choice) {
+  const currentQuestion = questions[currentQuestionIndex];
+  const feedbackContainer = document.getElementById("feedback");
   if (choice === questions[currentQuestionIndex].answer) {
     score++;
   } else {
